@@ -17,6 +17,6 @@ public class MainClassTest {
     @Test
     public void testGetClassString() {
         MainClass mainClass = new MainClass();
-        Assert.assertTrue("Возвращаемое значение getClassString не содержит hello или Hello!", mainClass.getClassString().toLowerCase().contains("hello"));
+        Assert.assertTrue("Возвращаемое значение getClassString не содержит hello или Hello!", mainClass.getClassString().contains("Hello") || mainClass.getClassString().contains("hello"));
     }
 }
